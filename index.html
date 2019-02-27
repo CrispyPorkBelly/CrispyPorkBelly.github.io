@@ -4,282 +4,33 @@
 
    <head>
       <title>Request Header Parser</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
    </head>
 
    <body>
-<header>
-  <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white">
-    <!-- Logo -->
-    <a class="navbar-brand d-flex justify-content-sm-center" href="#">
-        <img src="https://i.ibb.co/jH0z7zC/pnportfoliologo.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="brand-icon">
-        <div id="logo-personal-container">
-          <div class="font-weight-bold" id="logo-personal-name">PETER NGUYEN</div>
-          <div class="font-weight-light" id="logo-personal-title">Aspiring Product Mgr.</div>
-        </div>
-    </a>
-    <!-- End logo-->
-    <!-- Collapsable donut for nav-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <!--End collapsable donut-->
-    <!-- Add nav links. -->
-    <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarNavAltMarkup">
-      <div class="navbar-nav text-center">
-        <a class="nav-item nav-link border-sm-bottom" href="#about-me">About Me</a>
-        <a class="nav-item nav-link border-sm-bottom" href="#portfolio">Web Dev. Portfolio</a>
-        <a class="nav-item nav-link" href="#contact-section">Contact Me</a>
-      </div>
-    </div>
-    <!-- End nav links -->
-  </nav>
-</header>
-<main>
-  <!--Begin main content-->
-  <div class="jumbotron jumbotron-fluid" id="about-me">
-    <video autoplay muted loop poster="https://dummyimage.com/900x400/000/fff">    
-    <source src="" data-src="https://assets.mixkit.co/videos/308/308-720.mp4" type="video/mp4">
-</video>
-    <div class="container-fluid d-flex align-items-center justify-content-center h-100" id="jumbotron-content">
-      <!-- Container required for jumbotron-fluid -->
-      <div class="row d-flex flex-column">
-        <div class="col-sm-12 d-flex flex-column align-items-center mb-2">
-          <img src="https://media.licdn.com/dms/image/C4E03AQF4dxfgYCILJQ/profile-displayphoto-shrink_200_200/0?e=1551312000&v=beta&t=_fPKv3ekFKDFu9RAPBDkKWGXC-vwjJcM1vIw1hc0_AI" alt="peter-photo" id="peter-photo" class="img-fluid img-thumbnail rounded-circle"
-          />
-        </div>
-        <div class="col text-center align-middle h-100">
-          <h2 class="main-text" id="about-me-bio-header"></h2>
-          <div id="hideOnload" style="opacity:0">
-            <p class="lead hide">Working with innovative technology is my passion. To maximize the value that I bring to teams working with technology, I have taught myself Full Stack Web Development to compliment my business background.</p>
-            <p id="intro-see-more">See what I can offer your team below!</p>
-            <div class="col text-center d-flex flex-wrap justify-content-center">
-              <a href="#portfolio"><button type="button" class="btn btn-primary btn-lg main-btns"><i class="ion-briefcase mr-2"></i>Web Dev. Portfolio</button></a>
-              <a href="https://www.linkedin.com/in/petertdnguyen/" target="_blank"><button type="button" class="btn btn-success btn-lg btn-outline main-btns"><i class="ion-social-linkedin mr-2"></i>LinkedIn</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of column in jumbotron -->
-    </div>
-    <!-- End container for jumbotron-->
-  </div>
-  <!-- End jumbotron-->
+      <div class="container">
+        <h2>API Project: Request Header Parser Microservice</h2>
+        <h3>User Story: </h3>
+        1. I can get the IP address, preferred languages (from header <code>Accept-Language</code>)<br> and system infos (from header <code>User-Agent</code>) for my device.
 
-  <div class="container-fluid" id="portfolio">
-    <div class="section-header text-center">
-      <h3>Portfolio</h3>
-      <p class="text-muted">Projects I've completed during my coding journey. All projects not hosted on CodePen will have the code viewable on my <a href="https://github.com/CrispyPorkBelly" target="_blank">GitHub Repo</a>.</p>
-    </div>
-    <div class="row">
-      <!-- Start of one card -->
-      <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex align-items-stretch">
-        <div class="card">
-          <img class="card-img-top" src="https://i.ibb.co/swgV0vP/stock-checker.png" alt="stock-checker">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Coming Soon: Stock Price Checker</h5>
-            <div class="skills-used-container d-flex flex-wrap justify-content-start">
-              <p class="skills-description bg-success border rounded px-2">Node</p>
-              <p class="skills-description bg-success border rounded px-2">Express</p>
-              <p class="skills-description bg-success border rounded px-2">NPM</p>
-              <p class="skills-description bg-success border rounded px-2">Chai</p>
-              <p class="skills-description bg-success border rounded px-2">Mocha</p>
-              <p class="skills-description bg-success border rounded px-2">MongoDB</p>
-              <p class="skills-description bg-success border rounded px-2">Mongoose</p>
-              <p class="skills-description bg-success border rounded px-2">Helmet.js</p>
-              <p class="skills-description bg-success border rounded px-2">HTML</p>
-            </div>
-            <p class="card-text">Check the price of a single stock, compare two stock prices, and add likes to your favourite stock.</p>
-            <a href="https://stock-tracker-2019.herokuapp.com/" target="_blank" class="btn btn-success align-self-end">Review</a>
-          </div>
-        </div>
+        <h3>Example Usage:</h3>
+        <p>
+          [base url]/api/whoami
+        </p>
+
+        <h3>Example Output:</h3>
+        <p>
+          <code>{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
+        </p>
       </div>
-      <!-- End one card -->
-      <!-- Start of one card -->
-      <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex align-items-stretch">
-        <div class="card">
-          <img class="card-img-top" src="https://i.ibb.co/mBbk02t/exercise-tracker.png" alt="exercise-tracker">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Exercise Tracker</h5>
-            <div class="skills-used-container d-flex flex-wrap justify-content-start">
-              <p class="skills-description bg-success border rounded px-2">Node</p>
-              <p class="skills-description bg-success border rounded px-2">Express</p>
-              <p class="skills-description bg-success border rounded px-2">NPM</p>
-              <p class="skills-description bg-success border rounded px-2">Chai</p>
-              <p class="skills-description bg-success border rounded px-2">Mocha</p>
-              <p class="skills-description bg-success border rounded px-2">MongoDB</p>
-              <p class="skills-description bg-success border rounded px-2">Mongoose</p>
-              <p class="skills-description bg-success border rounded px-2">Helmet.js</p>
-              <p class="skills-description bg-success border rounded px-2">HTML</p>
-            </div>
-            <p class="card-text">Keep up the progress by logging your workouts.</p>
-            <a href="https://exercise-v2-tracker.glitch.me" target="_blank" class="btn btn-success align-self-end">Review</a>
-          </div>
-        </div>
+      <div class="footer">
+        <p>
+          by <a href="http://www.freecodecamp.com">freeCodeCamp</a> | <a href="https://hyperdev.com/#!/remix/FCC_API_header_bplate/8c449aa9-a80c-47ad-8142-8da90f658731">Click here to Remix</a>
+        </p>
       </div>
-      <!-- End one card -->
-      <!-- Start of one card -->
-      <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex align-items-stretch">
-        <div class="card">
-          <img class="card-img-top" src="https://i.ibb.co/8zh4NTX/personal-library.png" alt="personal-library">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Personal Library</h5>
-            <div class="skills-used-container d-flex flex-wrap justify-content-start">
-              <p class="skills-description bg-success border rounded px-2">Node</p>
-              <p class="skills-description bg-success border rounded px-2">Express</p>
-              <p class="skills-description bg-success border rounded px-2">NPM</p>
-              <p class="skills-description bg-success border rounded px-2">Chai</p>
-              <p class="skills-description bg-success border rounded px-2">Mocha</p>
-              <p class="skills-description bg-success border rounded px-2">MongoDB</p>
-              <p class="skills-description bg-success border rounded px-2">Mongoose</p>
-              <p class="skills-description bg-success border rounded px-2">Helmet.js</p>
-              <p class="skills-description bg-success border rounded px-2">HTML</p>
-            </div>
-            <p class="card-text">Add books that you've read and share comments with friends about them.</p>
-            <a href="https://personal-library-2019.herokuapp.com/" target="_blank" class="btn btn-success align-self-end">Review</a>
-          </div>
-        </div>
-      </div>
-      <!-- End one card -->
-      <!-- Start of one card -->
-      <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex align-items-stretch">
-        <div class="card">
-          <img class="card-img-top" src="https://i.ibb.co/rtS390b/url-shortener.png" alt="url-shortener">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">URL Shortener</h5>
-            <div class="skills-used-container d-flex flex-wrap justify-content-start">
-              <p class="skills-description bg-success border rounded px-2">Node</p>
-              <p class="skills-description bg-success border rounded px-2">Express</p>
-              <p class="skills-description bg-success border rounded px-2">NPM</p>
-              <p class="skills-description bg-success border rounded px-2">Chai</p>
-              <p class="skills-description bg-success border rounded px-2">Mocha</p>
-              <p class="skills-description bg-success border rounded px-2">MongoDB</p>
-              <p class="skills-description bg-success border rounded px-2">Mongoose</p>
-              <p class="skills-description bg-success border rounded px-2">Helmet.js</p>
-              <p class="skills-description bg-success border rounded px-2">HTML</p>
-            </div>
-            <p class="card-text">Shrink your long URLs into something much smaller.</p>
-            <a href="https://fcc2019-url-shortener.glitch.me" target="_blank" class="btn btn-success align-self-end">Review</a>
-          </div>
-        </div>
-      </div>
-      <!-- End one card -->
-      <!-- Start of one card -->
-      <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex align-items-stretch">
-        <div class="card">
-          <img class="card-img-top" src="https://i.ibb.co/ChP5vGQ/issue-tracker.png" alt="issue-tracker">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Issue Tracker</h5>
-            <div class="skills-used-container d-flex flex-wrap justify-content-start">
-              <p class="skills-description bg-success border rounded px-2">Node</p>
-              <p class="skills-description bg-success border rounded px-2">Express</p>
-              <p class="skills-description bg-success border rounded px-2">NPM</p>
-              <p class="skills-description bg-success border rounded px-2">Chai</p>
-              <p class="skills-description bg-success border rounded px-2">Mocha</p>
-              <p class="skills-description bg-success border rounded px-2">MongoDB</p>
-              <p class="skills-description bg-success border rounded px-2">Mongoose</p>
-              <p class="skills-description bg-success border rounded px-2">Helmet.js</p>
-              <p class="skills-description bg-success border rounded px-2">HTML</p>
-            </div>
-            <p class="card-text">Log and update project issues.</p>
-            <a href="https://codepen.io/Green-water-bottle/full/QZMZKN" target="_blank" class="btn btn-success align-self-end">Review</a>
-          </div>
-        </div>
-      </div>
-      <!-- End one card -->
-      <!-- Start of one card -->
-      <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex align-items-stretch">
-        <div class="card">
-          <img class="card-img-top" src="https://i.ibb.co/jTv9wSR/pomodoroclock.png" alt="pomodoroclockicon">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Pomodoro Clock</h5>
-            <div class="skills-used-container d-flex flex-wrap justify-content-start">
-              <p class="skills-description bg-success border rounded px-2">HTML</p>
-              <p class="skills-description bg-success border rounded px-2">CSS</p>
-              <p class="skills-description bg-success border rounded px-2">Flexbox</p>
-              <p class="skills-description bg-success border rounded px-2">React</p>
-            </div>
-            <p class="card-text">Boost your productivity with the pomodoro technique.</p>
-            <a href="https://codepen.io/Green-water-bottle/full/roGJjV" target="_blank" class="btn btn-success align-self-end">Review</a>
-          </div>
-        </div>
-      </div>
-      <!-- End one card -->
-      <!-- Start of one card -->
-      <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex align-items-stretch">
-        <div class="card">
-          <img class="card-img-top" src="https://i.ibb.co/ZNL5wBL/jscalculator-PNG.png" alt="jscalculatoricon">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">JavaScript Calculator</h5>
-            <div class="skills-used-container d-flex flex-wrap justify-content-start">
-              <p class="skills-description bg-success border rounded px-2">HTML</p>
-              <p class="skills-description bg-success border rounded px-2">CSS</p>
-              <p class="skills-description bg-success border rounded px-2">Flexbox</p>
-              <p class="skills-description bg-success border rounded px-2">React</p>
-            </div>
-            <p class="card-text">Never be without a calculator again with a quick and simple online calculator.</p>
-            <a href="https://codepen.io/Green-water-bottle/full/bOqmzq" target="_blank" class="btn btn-success align-self-end">Review</a>
-          </div>
-        </div>
-      </div>
-      <!-- End one card -->
-      <!-- Start of one card -->
-      <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex align-items-stretch">
-        <div class="card">
-          <img class="card-img-top" src="https://i.ibb.co/yBxKj8Y/drummachine.png" alt="drummachineicon">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Drum Machine</h5>
-            <div class="skills-used-container d-flex flex-wrap justify-content-start">
-              <p class="skills-description bg-success border rounded px-2">HTML</p>
-              <p class="skills-description bg-success border rounded px-2">CSS</p>
-              <p class="skills-description bg-success border rounded px-2">Flexbox</p>
-              <p class="skills-description bg-success border rounded px-2">React</p>
-            </div>
-            <p class="card-text">Drum kit with two different sound options for different mixes.</p>
-            <a href="https://codepen.io/Green-water-bottle/full/PXGjNy" target="_blank" class="btn btn-success align-self-end">Review</a>
-          </div>
-        </div>
-      </div>
-      <!-- End one card -->
-      <!-- Start of one card -->
-      <div class="col-12 col-md-6 col-lg-4 mt-3 d-flex align-items-stretch">
-        <div class="card">
-          <img class="card-img-top" src="https://i.ibb.co/rtMdG05/markdownpreviewer.png" alt="markdownpreviewericon">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Markdown Previewer</h5>
-            <div class="skills-used-container d-flex flex-wrap justify-content-start">
-              <p class="skills-description bg-success border rounded px-2">HTML</p>
-              <p class="skills-description bg-success border rounded px-2">CSS</p>
-              <p class="skills-description bg-success border rounded px-2">React</p>
-            </div>
-            <p class="card-text">Test out your HTML and see how it looks live with this tool.</p>
-            <a href="https://codepen.io/Green-water-bottle/full/QZMZKN" target="_blank" class="btn btn-success align-self-end">Review</a>
-          </div>
-        </div>
-      </div>
-      <!-- End one card -->
-    </div>
-    <!--Row-->
-  </div>
-  <!-- End of container-fluid for post jumbletron work -->
-  <div class="parallax mt-3" id="contact-section">
-    <div class="col text-center d-flex flex-column justify-content-center" id="contact-now">
-      <h2 class="my-3" class="main-text">Ready to collaborate?</h2>
-      <a href="mailto:petertdnguyen@outlook.com"><button type="button" class="btn btn-primary btn-lg mt-2" id="collab-btn">Yes!</button></a>
-    </div>
-  </div>
-</main>
-<footer class="mt-3">
-  <div class="container text-center py-3">
-    <div class="row">
-      <div class="col">
-        <p>© 2019 Peter Nguyen</p>
-        <a href="https://www.linkedin.com/in/petertdnguyen/" target="_blank" class="footer-connect mx-2">LinkedIn  <i class="ion-social-linkedin"></i></a>
-        <a href="mailto:petertdnguyen@outlook.com" class="footer-connect mx-2">Email  <i class="ion-email"></i></a>
-        <a href="https://github.com/CrispyPorkBelly" target="_blank" class="footer-connect mx-2">Github  <i class="ion-social-github"></i></a>
-      </div>
-    </div>
-  </div>
-  <!-- Footer -->
-</footer>
-  </body>
+   </body>
+
+
 </html>
